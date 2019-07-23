@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StudentLogin</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<h1>STUDENT LOGIN PAGE</h1>
+<form action="./student">
+<div class="container">
+    <label for="uname"><b>USERNAME</b></label><br>
+    <input type="text" placeholder="Enter Username" name="uname" id="my" required><br>
+
+    <label for="psw"><b>PASSWORD</b></label><br>
+    <input  type="password" placeholder="Enter Password" name="psw"  id="password"required><br>
+	<input type="checkbox" onclick="myFunction()" >showPassword<br>
+    <input type="submit" value="Login">
+</div>
+</form>
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+</html>
